@@ -1,18 +1,259 @@
-<!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
-    <title>연습</title>
+    <title>JYP ENTERTAINMENT REDESIGN</title>
+
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+    <!-- 스크롤리 파이 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/">
 </head>
+
 <body>
-    <div class="top-bar">
-        <ul class="row">
-            <li class="cell">
-                <a href="">연습
-                    <img src="img/STRAYKIDS_bn.jpg" alt="">
-                </a>
-            </li>
-        </ul>
+
+
+    <div class="top-bar relative">
+        <a href="#" class="logo absolute-left absolute-middle img-box">
+            <img src="./img/jyp_logo%20(2).png" alt="">
+        </a>
+
+        <nav class="menu-box-1 text-align-center line-height-0-ch-only">
+            <ul class="row inline-block">
+                <li class="cell page-1-menu-item">
+                    <a href="#page-1" class="block">COMPANY</a>
+                    <div>
+                        <div>
+                            <div>
+                                <ul class="row">
+                                    <li class="cell">
+                                        <a href="">ABOUT JYP</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="">HISTORY</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="">NOTICE</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="">RECRUIT</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="">CSR</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="">IR</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell page-2-menu-item"> <a href="#" class="block">ARTIST</a></li>
+                <li class="cell page-3-menu-item"> <a href="#" class="block">AUDITION</a></li>
+                <li class="cell page-4-menu-item"> <a href="#" class="block">NOTICE</a></li>
+            </ul>
+        </nav>
+
+        <nav class="menu-box-2 absolute-right absolute-middle">
+            <ul class="row">
+                <li class="cell">
+                    <a href="" class="block active">KOR</a>
+                </li>
+                <li class="cell">
+                    <a href="" class="block">ENG</a>
+                </li>
+                <li class="cell cart-btn">
+                    <a href="" class="block">JPN</a>
+                </li>
+                <li class="cell cart-btn">
+                    <a href="" class="block">CHN</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-</body>
-</html>
+
+    <div class="page-indicator-box"></div>
+
+    <div class="pages">
+        <div data-section-name="page-1" class="page page-1 relative">
+            <div class="my-carousel-1">
+                <div class="owl-carousel owl-theme">
+                    <div class="item" style="background-image: url(./img/STRAYKIDS_bn.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(./img/STRAYKIDS_bn_1.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(./img/GOT7_bn.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(./img/twice_bn.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(./img/J.Y.PARK_bn.jpg);">
+                    </div>
+                    <div class="item" style="background-image: url(./img/pc_card.jpg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-box-1">
+                <div class="row">
+                    <div class="cell">
+                        <a href="#" class="block btn-close">NOTICE</a>
+                    </div>
+                    <div class="cell">
+                        <a href="#" class="block btn-close">AUDITION</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-section-name="page-2" class="page page-2">
+            <div class="menu">
+                <ul class="row menu-logo">
+                    <li class="cell img-box">
+                        <a href="">MURTI MEDIA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-1">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="bg" style="background-image:url(./img/FANCY_YOU_youtube_cover.jpg);"></div>
+                    </div>
+                    <div class="item">
+                        <div class="bg" style="background-image:url(./img/st_youtube.jpg);"></div>
+                    </div>
+                    <div class="item">
+                        <div class="bg" style="background-image:url(./img/FEVER_youtube_cover.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="txt">
+                <p class="artist">STRAYKIS</p>
+                <p class="tit">STRAYKIS - Clé : LEVANTER</p>
+            </div>
+        </div>
+        <div data-section-name="page-3" class="page page-3">
+          <div class="album-row">
+              <div class="album-bg">
+                  <div class="active" style="background-image: url(./img/STRAYKIDS_background_cover.jpg);">
+                      <div class="des">
+                          <h1>NEW ALBUM RELEASES</h1>
+                      </div>
+                      <div class="album-box">
+                          <div class="inner">
+                              <div class="current">
+                                  <div class="art">
+                                      <img src="./img/Cl%C3%A9_LEVANTER_album_cover.jpg" alt="">
+                                  </div>
+                                  <div class="txt">
+                                      <div class="tit">STRAYKIS 5TH MINI ALUBM Clé : LEVANTER</div>
+                                          <ul class="dt">
+                                              <li>
+                                                  <span class="label">아티스트</span>
+                                                  <div>STRAYKIS</div>
+                                              </li>
+                                              <li>
+                                                  <span class="label">발매</span>
+                                                  <div>2019.12.09</div>
+                                              </li>
+                                          </ul>
+                                    </div>
+                                    <div class="album_nav">
+                                         <div class="side-btns">
+                                             <div><span><i aria-hidden="true" class="fa fa-angle-left fa-inverse fa-3x left"></i></span></div>
+                                             <div><span><i aria-hidden="true" class="fa fa-angle-right fa-inverse fa-3x"></i></span></div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="quick">
+            <div class="qnb">
+                <li class="i1">
+                    <a href="https://twitter.com/jypnation">
+                        <img src="./img/twitter.png" alt="">
+                    </a>
+                 </li>
+                <li class="i2">
+                    <a href="https://www.facebook.com/jypnation">
+                        <img src="./img/facebook.png" alt="">
+                    </a>
+                  </li>
+                <li class="i3">
+                    <a href="https://www.youtube.com/jypentertainment">
+                        <img src="./img/youtube.png" alt="">
+                    </a>
+                </li>
+                <li class="i4">
+                    <a href="https://edm-wish.jype.com/">
+                        <img src="./img/EDM.png" alt="">
+                    </a>
+                </li>
+            </div>
+        </div>    
+        <div data-section-name="page-4" class="page page-4">
+            <div class="footer">
+                <div class="con con-2 row">
+                    <div class="cell">
+                        <a href="#" class="img-box bottom-logo block">
+                            <img src="./img/jyp_logo%20(2).png" alt="">
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <ul class="row">
+                            <li class="cell">JYP 엔터테인먼트</li>
+                            <li class="cell clear-both">서울 강동구 강동대로 205 JYP Center (성내동 448-13)</li>
+                            <li class="cell"> 02-2225-8100</li>
+                        </ul>
+                        <ul>
+                            <li class="cell">2011 COPYRIGHT ⓒ JYP CORP. ALL RIGHT RESERVED</li>
+                        </ul>
+                    </div>
+                    <div class="float-right">
+                        <select class="family-site" title="패밀리 사이트" onchange="if(this.value!='') {window.open(this.value);}">
+                            <option value="">패밀리 사이트</option>
+                            <option value="https://fans.jype.com/">JYP FAN'S</option>
+                            <option value="http://book.interpark.com/event/EventPremiumNewApplicant.do?_method=JYPStore">JYP STORE</option>
+                            <option value="https://edm-wish.jype.com/">JYP_EDM</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+</body></html>

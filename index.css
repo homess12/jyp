@@ -1,0 +1,729 @@
+/* 라이브러리 */
+
+.con {
+    width: 1460px;
+}
+
+
+.top-bar {
+    width: 1460px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.top-bar .logo {
+    margin-left: 40px;
+}
+
+.top-bar .menu-box-1 {
+    margin-left: 90px;
+}
+
+.top-bar .menu-box-1 > ul > li > a {
+    position: relative;
+    color: #333333;
+    padding: 30px 10px;
+    font-size: 21px;
+}
+
+.top-bar .menu-box-1 > ul > li > a:hover {
+    color: #00b4e7;
+}
+
+.top-bar > .menu-box-1 li > a {
+    color: #ffffff;
+    display: block;
+    padding: 20px 10px;
+}
+
+/* 2차 메뉴 */
+.top-bar > .menu-box-1 li > a:hover {
+    color: #00b4e7;
+}
+
+.top-bar > .menu-box-1 > ul > li > a {
+    padding: 30px 20px;
+    position: relative;
+}
+
+.top-bar > .menu-box-1 > ul > li > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width 0;
+    height: 1px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.top-bar > .menu-box-1 > ul > li:hover > a::after {
+    width: calc(100% - 20px);
+}
+
+.top-bar > .menu-box-1 > ul > li:hover > div {
+    display: block;
+}
+
+.top-bar > .menu-box-1 > ul > li > div {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(30, 30, 30, .8);
+}
+
+.top-bar > .menu-box-1 > ul > li:nth-child(1) > div {
+    padding-left: 490px;
+}
+
+.top-bar > .menu-box-1 > ul > li:nth-child(2) > div {
+    padding-left: 265px;
+}
+
+.top-bar > .menu-box-1 > ul > li > div > div > div > ul > li.text-cell > a {
+    cursor: default;
+}
+
+.top-bar > .menu-box-1 > ul > li > div > div > div > ul > li > ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(30, 29, 36, .9);
+    left: 0;
+    right: 0;
+    padding-left: 265px;
+}
+
+.top-bar > .menu-box-1 > ul > li > div > div > div > ul > li:hover > ul {
+    display: block;
+}
+
+/* menu-box-2-언어 */
+
+.top-bar .menu-box-2 > ul > li > a {
+    display: block;
+    color: #999;
+    font-size: 13px;
+    padding: 0 20px;
+    border-radius: 100%;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.top-bar .menu-box-2 > ul > li > a:hover {
+    color: #333;
+}
+
+.top-bar .menu-box-2 > ul > li > a.active:hover {
+    background: #00b4e7;
+    color: #ffffff;
+}
+
+/*
+ 페이지 인디케이터 
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.pagination a {
+    display: block;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+.pagination a.active::after {
+    background-color: #073c6d;
+    transform: translateX(-50%) translateY(-50%) scale(2);
+}
+
+.pagination a .hover-text {
+    display: none;
+}
+
+.pagination a::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #adadad;
+    transform: translateX(-50%) translateY(-50%);
+}
+*/
+
+
+/* 페이지 */
+
+.page-1 {
+    width: 1460px;
+    margin: 0 auto;
+}
+
+.page-1 > .my-carousel-1 {
+    overflow: hidden;
+    margin-top: 69px;
+}
+
+.page-1 > .my-carousel-1 > .owl-carousel,
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-stage-outer,
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage,
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item,
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-nav > .owl-prev,
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-nav > .owl-next {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: 500px;
+}
+
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-nav > .owl-next {
+    right: auto;
+    left: 50%;
+    margin-left: 500px;
+}
+
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-nav > .owl-prev > .btn-left,
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-nav > .owl-next > .btn-right {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url(./img/ico.png);
+    background-position: -50px -50px;
+    background-repeat: no-repeat;
+    background-color: #00b4e7;
+}
+
+.page-1 > .my-carousel-1 > .owl-carousel > .owl-nav > .owl-next > .btn-right {
+    background-position: -50px -100px;
+}
+
+/* popup - notice, audition  */
+
+.popup {
+    position: relative;
+    width: 1460px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.popup-box-1 {
+    position: absolute;
+    width: 1460px;
+
+}
+
+.popup-box-1 > .row > .cell {
+    width: 50%;
+}
+
+.popup-box-1 > .row > .cell > a {
+    text-align: center;
+    color: #ffffff;
+    background-color: #00b4e7;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+/*
+.popup-box-1 > .row > .cell > a::after {
+    background: #dddddd;
+    display: block;
+    content: '|';
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    
+}
+*/
+
+.popup-box-1 > .row > .cell:first-child > a {
+    background-color: #f6f3f3;
+    color: #333333;
+}
+
+/* page-2 */
+
+.page-2 {
+    width: 1460px;
+    background: #EFEFEF;
+    margin: 0 auto; 
+}
+
+.page-2 .menu .menu-logo {
+    position: absolute;
+    left: 50%;
+    margin-top: 80px;
+    transform: translateX(-50%);
+}
+
+.page-2 .menu .menu-logo > li > a {
+    font-size: 38px;
+    color: #333333;
+}
+
+.my-1 > .owl-carousel {
+    margin-top: 100px;
+}
+
+.my-1 > .owl-carousel > .owl-stage-outer > .owl-stage {
+    margin-top: 200px;
+}
+
+.my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    height: 300px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .bg {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.my-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item.active > .item {
+    height: 500px;
+    margin-top: 0;
+}
+
+.my-1 > .owl-carousel > .owl-nav {
+    margin-top: 0;
+}
+
+.my-1 > .owl-carousel > .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.my-1 > .owl-carousel > .owl-nav > .owl-prev,
+.my-1 > .owl-carousel > .owl-nav > .owl-next {
+    position: absolute;
+    top: 13%;
+    right: 50px;
+    transform: translateY(-50%);
+    border-radius: 50% !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-size: 3rem !important;
+    padding: 0px 20px 0px 15px !important;
+    color: #5d5d5d;
+}
+
+.my-1 > .owl-carousel > .owl-nav > .owl-prev::after {
+    content: '|';
+    /*    display: block;*/
+    position: absolute;
+    right: 2px;
+    bottom: 40px;
+    ;
+    width 0;
+    height: 1px;
+    transition: width 0.3s;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.my-1 > .owl-carousel > .owl-nav > .owl-prev:active,
+.my-1 > .owl-carousel > .owl-nav > .owl-next:active {
+    color: #afafaf;
+    transform: translateY(-45%);
+}
+
+.my-1 > .owl-carousel > .owl-nav > .owl-next {
+    left: auto;
+    right: 0;
+    padding: 0px 15px 0px 20px !important;
+}
+
+.my-1 > .owl-carousel > .owl-dots > .owl-dot > span {
+    border-radius: 3px;
+    margin: 0 3px;
+    padding: 10px;
+    display: block;
+}
+
+.page-2 .head .con .slick-slider > .btn-left,
+.page-2 .head .con .slick-slider > .btn-right {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    font-size: 30px;
+    color: #5d5d5d;
+}
+
+.page-2 .head .con .slick-slider > .btn-right::before {
+    content: "|";
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    right: 26px;
+    transform: translateX(-50%);
+    width 0;
+    height: 1px;
+    font-size: 25px;
+}
+
+.page-2 .head .con .slick-slider > .btn-right {
+    right: 100px;
+    left: auto;
+}
+
+.page-2 .txt {
+    /*    position: relative;*/
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+}
+
+.page-2 .txt .artist {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: -0.03em;
+}
+
+.page-2 .txt .tit {
+    font-size: 16px;
+    color: #787878;
+    line-height: 1.5em;
+}
+
+/* page-3 */
+
+.page-3 {
+    width: 1460px;
+    background: #EFEFEF;
+    margin: 0 auto;
+    margin-top: 80px;
+
+}
+
+.page-3 .album-row {
+    position: relative;
+}
+
+.page-3 .album-row .album-bg {
+    background: #222222;
+}
+
+.page-3 .menu .menu-logo {
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+}
+
+.page-3 .menu .menu-logo > li > a {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.album-row {
+    width: 1460px;
+    height: 555px;
+    position: relative;
+}
+
+.album-row > .album-bg > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.album-row > .album-bg > div.active {
+    opacity: 1;
+}
+
+.album-row > .album-bg > div > .des {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+.album-row > .album-bg > div > .des {
+    text-align: center;
+}
+
+.album-row > .album-bg > div > .des > * {
+    color: #ffffff;
+}
+
+.album-row > .album-bg > div > .des > h1 {
+    font-size: 38px;
+}
+
+.album-box {
+    height: 300px;
+    position: relative;
+    top: 30%;
+}
+
+.inner {
+    width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.album-box .current {
+    position: relative;
+    float: left;
+    width: 570px;
+    overflow: hidden;
+}
+
+.album-box .current .art {
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.album-box .current .txt {
+    margin-left: 300px;
+    padding-left: 30px;
+    color: #ffffff;
+}
+
+.album-box .current .tit {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31px;
+    padding-bottom: 25px;
+    letter-spacing: -0.03em;
+    border-bottom: 1px solid #c2c1c5;
+    margin-bottom: 25px;
+}
+
+.album-box .current .dt li {
+    font-size: 16px;
+    line-height: 1.5em;
+    min-height: 1.5em;
+    margin-bottom: 3px;
+    position: relative;
+    padding-left: 80px;
+}
+
+.album-box .current .dt .label {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    font-weight: 600;
+}
+
+.album-box .album_nav {
+    position: absolute;
+    left: 330px;
+    bottom: 0;
+}
+
+.side-btns > div {
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.side-btns > div:first-child {
+    left: auto;
+    right: 0;
+}
+
+.side-btns > div > span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: inherit;
+    right: inherit;
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.side-btns > div:active > span {
+    transform: translateY(-40%);
+}
+
+.side-btns > div > span > i {
+    position: absolute;
+    top: -20%;
+    left: 60px;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+}
+
+.side-btns > div > span > .left::after {
+    content: "|";
+/*     display: block; */
+    position: absolute;
+    bottom: 40px;;
+    left: 40px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    transition: width 0.3s;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* quick(따라 다니는 메뉴) */
+
+.quick {
+    width: 200px;
+    height: 500px;
+    position: fixed;
+    left: calc(50% + 750px);
+    top :50%;
+    transform: translateY(-50%);
+}
+
+.con {
+    width: 1460px;
+    margin: 0 auto;
+}
+
+.qnb li {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.qnb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.qnb .i1 {
+    background-position: 0 -30px;
+}
+
+.qnb .i2 {
+    background-position: 0 -30px;
+}
+
+.qnb .i3 {
+    background-position: 0 -60px;
+}
+
+.qnb .i4 {
+    background-position: 0 -90px;
+}
+
+/* page-4-footer */
+
+.con {
+    width: 1460px;
+}
+
+.con-min-width {
+    min-width: 1460px;
+}
+
+/*
+.con-2 {
+    width: 1200px;
+}
+*/
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.footer > .con > div:nth-child(2) {
+    margin-left: 30px;
+}
+
+.footer > .con > div:nth-child(2) > ul > li {
+    color: #999999;
+    margin-top: 30px;
+/*    margin-bottom: 30px;*/
+    margin-right: 20px;
+    position: relative;
+}
+
+.footer > .con > div:nth-child(2) > ul > li::after {
+    content: "";
+    position: absolute;
+    margin-left: 7px;
+    width: 1px;
+    height: 12px;
+    background-color: #999999;
+    right: -11px;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+}
+
+.footer > .con > div:nth-child(2) > ul > li:first-child::after,
+.footer > .con > div:nth-child(2) > ul > li:last-child::after {
+    display: none;
+}
+
+.footer > .con > div:last-child > select {
+    margin-top: 20px;
+    background-color: #eeeeee;
+    border: 0;
+    border-radius: 22px;
+    height: 43px;
+    width: 210px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+
